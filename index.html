@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Tres en Raya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Juego de Tres en Raya</h1>
+        <div id="tresEnRaya">
+            <div class="fila">
+                <div class="celda" onclick="seleccionarCelda(0)"></div>
+                <div class="celda" onclick="seleccionarCelda(1)"></div>
+                <div class="celda" onclick="seleccionarCelda(2)"></div>
+            </div>
+            <div class="fila">
+                <div class="celda" onclick="seleccionarCelda(3)"></div>
+                <div class="celda" onclick="seleccionarCelda(4)"></div>
+                <div class="celda" onclick="seleccionarCelda(5)"></div>
+            </div>
+            <div class="fila">
+                <div class="celda" onclick="seleccionarCelda(6)"></div>
+                <div class="celda" onclick="seleccionarCelda(7)"></div>
+                <div class="celda" onclick="seleccionarCelda(8)"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pregunta" class="container hidden">
+        <h2>¿Quieres seguir conmigo?</h2>
+        <p>Aún estás lo suficientemente enamorada de mí para continuar esta relación?</p>
+        <div class="button-group">
+            <button class="btn-yes" onclick="respuesta('si')">Sí</button>
+            <button class="btn-no" onclick="respuesta('no')">No</button>
+            <button class="btn-maybe" onclick="respuesta('talVez')">Tal vez</button>
+        </div>
+    </div>
+
+    <div id="mensajeFinal" class="container hidden">
+        <img src="tulipan_morado.jpg" alt="Tulipán morado">
+        <p>Te amo, no sé cómo llegamos a esto, pero siempre tú. Incluso practico mi código contigo, en hacerte cosas básicas y sencillas pero a la vez pensadas en ti. No soy el mejor, pero intento serlo, o al menos hacerte feliz. Quiero seguir contigo, tú me haces más y necesito eso en mi vida. Y ya mucho de esto... no sé qué poner.</p>
+        <button class="btn-send" onclick="alert('Responde a estos mensajes en IG')">Enviar</button>
+    </div>
+
+    <div id="mensajeRosa" class="container hidden">
+        <button class="btn-pink" onclick="abrirMensaje()">Abrir mensaje</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
